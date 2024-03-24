@@ -38,7 +38,9 @@ export default function Animation() {
 
     return (
         <div style={{paddingBottom: "177.78%"}}>
-            <div ref={canvas} id="animated-canvas" className="absolute top-0 left-0 w-full h-full" frame={1} ></div>
+            { //@ts-ignore
+                <div ref={canvas} id="animated-canvas" className="absolute top-0 left-0 w-full h-full" frame={1} />
+            }
         </div>
     )
 }
