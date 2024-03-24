@@ -39,7 +39,7 @@ const bands = [
       name: 'Canyon',
       description: '2000 - 2009',
       color: 'blue',
-      bgClass: 'bg-blue-500'
+      bgClass: 'bg-blue-700'
     },
     {
       name:'Broadway',
@@ -91,6 +91,7 @@ export default function Bands() {
 
                 { bands.map(({name, bgClass, description}, i) => <div key={i}
                     className={`flex items-center text-lg p-5 rounded border duration-300 ease-in-out mb-3 ${bgClass}`}
+                    data-aos="fade-right"
                   >
                     <div>
                       <span className="font-bold leading-snug text-white">{name}</span> <span className="text-white">( {description} )</span>

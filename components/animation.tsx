@@ -16,20 +16,22 @@ export default function Animation() {
     useEffect(() => {
         if(typeof window !== 'undefined' && canvas.current){
             if(!animationRef.current){
-                console.log(animation);
                 animationRef.current = new CanvasImgSequence(canvas.current, animation);
             }
-            // intersection obserever to see how far from top canvas is
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting){
-                        console.log('intersecting', entry);
-                    } else {
-                        console.log('not intersecting');
-                    }
-                })
-            }, {threshold: 0.5})
-            observer.observe(canvas.current)
+
+            const height = canvas.current?.getBoundingClientRect().height;
+            const top = window.scrollY + canvas.current?.getBoundingClientRect().top + window.innerHeight * 0.5;
+            const pixelsPerFrame = animation.images.length / height;
+            let interval = window.setInterval(() => {
+                const currentScroll = window.scrollY;
+                const frame = Math.floor((top - currentScroll) * pixelsPerFrame);
+                if(frame < 0 || frame >= animation.images.length) return;
+                canvas.current?.setAttribute("frame", frame.toString());
+            }, 50);
+
+            return () => {
+                window.clearInterval(interval);
+            }
         }
     }, [canvas])
 
