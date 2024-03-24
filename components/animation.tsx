@@ -1,5 +1,6 @@
 import { useRef, useEffect, use } from 'react'
-import { CanvasImgSequence } from 'canvas-img-sequence'
+// import { CanvasImgSequence } from 'canvas-img-sequence'
+const canvasImgSequence = require('canvas-img-sequence');
 
 const animation = {
     width: 1080,
@@ -16,7 +17,7 @@ export default function Animation() {
     useEffect(() => {
         if(typeof window !== 'undefined' && canvas.current){
             if(!animationRef.current){
-                animationRef.current = new CanvasImgSequence(canvas.current, animation);
+                animationRef.current = new canvasImgSequence.CanvasImgSequence(canvas.current, animation);
             }
 
             const height = canvas.current?.getBoundingClientRect().height;
