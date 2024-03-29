@@ -7,7 +7,7 @@ export default function ContactUs() {
     const [submitted, setSubmitted] = useState(false);
 
     useLayoutEffect(() => {
-        if(typeof window != 'undefined' && window.location.search.includes('message')){
+        if(typeof window != 'undefined' && window.location.search.includes('success')){
             setSubmitted(true);
         }
     }, []);
@@ -21,7 +21,7 @@ export default function ContactUs() {
                 <div className="max-w-sm mx-auto bg-white">
                     {
                     //@ts-ignore
-                    <form name="contact" data-netlify="true">
+                    <form name="contact" data-netlify="true" action="/contact?success">
                         <div className="flex flex-wrap -mx-3 mb-4">
                             <div className="w-full px-3">
                             <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Name</label>
