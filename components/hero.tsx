@@ -2,7 +2,7 @@ import Image from 'next/image'
 import HeroBand from '@/public/images/hero-band.jpg'
 import HeroLocal from '@/public/images/hero-local.jpg'
 import HeroBands from '@/public/images/hero-bands.jpg'
-import BandsBg from '@/public/images/bands-bg.jpg'
+import HeroHand from '@/public/images/hero-hands.jpg'
 
 export default function Hero() {
   return (
@@ -13,6 +13,7 @@ export default function Hero() {
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
 
+          <Image src={HeroHand} className="absolute bottom-0 left-0 w-full" alt="bands Texture"/>
 
           {/* Hero image */}
           <div className='max-w-3xl m-auto'>
@@ -24,16 +25,13 @@ export default function Hero() {
           </div>
 
           {/* Section header */}
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">How long have you survived the valley?</h1>
+          <div className="text-center mb-[15vw]">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 drop-shadow-lg" data-aos="zoom-y-out">How long have you survived the valley?</h1>
           </div>
 
         </div>
+      </div>
 
-      </div>
-      <div className="h-72 relative">
-        <Image src={BandsBg} className="absolute top-0 left-0 w-full" alt="bands Texture"/>
-      </div>
     </section>
   )
 }

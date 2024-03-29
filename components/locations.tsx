@@ -10,7 +10,7 @@ export default function Locations() {
     const locations = [
       {
         name: "Madeline and Oliver",
-        address: "123 Sun Valley Road",
+        address: "460 Sun Valley Rd. Ste 102",
         link: "https://www.google.com/maps/dir//Madeline+%2B+Oliver,+Sun+Valley+Road,+Ketchum,+ID/@43.6814815,-114.4040593,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x54a982b9dddae76b:0x202866bd70833164!2m2!1d-114.3627739!2d43.6814269?entry=ttu",
         logo: "mo-logo"
       },
@@ -22,19 +22,19 @@ export default function Locations() {
       },
       {
         name: "Board Bin",
-        address: "123 Sun Valley Road",
+        address: "180 4th St E",
         link: "https://www.google.com/maps/dir//Board+Bin,+180+4th+St+E,+Ketchum,+ID+83340/@43.6803931,-114.4071483,13z/data=!3m1!5s0x54a982ba2f4cd81d:0xbe7cce22f8d9e47d!4m8!4m7!1m0!1m5!1m1!1s0x54a982ba174cefe7:0x61c1a6aeb2009c1c!2m2!1d-114.3658799!2d43.6804099?entry=ttu",
         logo: "bb-logo"
       },
       {
         name: "Subshack",
-        address: "123 Sun Valley Road",
+        address: "371 Washington Ave",
         link: "https://www.google.com/maps/dir//Johnny+G's+Sub+Shack,+Washington+Avenue,+Ketchum,+ID/@43.6803763,-114.4068974,13z/data=!3m2!4b1!5s0x54a982ba2f4cd81d:0xbe7cce22f8d9e47d!4m8!4m7!1m0!1m5!1m1!1s0x54a982ba1952854d:0x79cc261787e9fc47!2m2!1d-114.3655902!2d43.6803425?entry=ttu",
         logo: "jgs-logo"
       },
       {
         name: "Starbucks/Sun Valley Visitor Center",
-        address: "123 Sun Valley Road",
+        address: "491 Sun Valley Rd",
         link: "https://www.google.com/maps/dir//Starbucks,+Sun+Valley+Road,+Ketchum,+ID/@43.6817404,-114.404323,13z/data=!3m1!5s0x54a982ba2f4cd81d:0xbe7cce22f8d9e47d!4m8!4m7!1m0!1m5!1m1!1s0x54a982cc06bbcb19:0x3fd6d3713e3059f3!2m2!1d-114.3630376!2d43.6816858?entry=ttu",
         logo: "sb-logo"
       }
