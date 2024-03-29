@@ -57,8 +57,8 @@ export default function Locations() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10 md:mb-10 bg-gray-100 rounded shadow-xl">
             <h2 className="h2 mb-4">How do I get my Local Band?</h2>
-            <p className="text-xl text-gray-600">Local Bands are available at the following retailers for $2 each. The Local Band works on the honor system.  Request the band that corresponds with your Wood River Valley origin story. The authorized seller may ask you a validation quiz question.</p>
-            <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full my-5 sm:w-auto sm:mb-0" href="/fraud">Report fraud</a>
+            <p className="text-xl text-gray-600">Local Bands are available at the following retailers for $2 each. The Local Band works on the honor system.  Request the band that corresponds with your Wood River Valley origin story. The authorized seller may ask you a validation quiz question. If you see fruad let us know.</p>
+            <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full my-5 sm:w-auto sm:mb-0" href="/contact">Report fraud</a>
           </div>
 
           {/* Items */}
