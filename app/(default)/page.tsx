@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'Local Band | Ketchum, ID',
+  description: 'How long have you survived the valley? We' + "'"+ 're a band of locals” Justin Pisteoff shouted out to a packed in crowd at Grumpy&apos;s last night at the launch of his new initiative Local Band.',
 }
 
 import Hero from '@/components/hero'

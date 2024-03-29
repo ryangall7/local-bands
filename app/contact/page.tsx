@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Local Bands - Contact Us',
+  title: 'Contact Us - Local Band | Ketchum, ID',
   description: 'Let us know your thoughts, about the bands, our website, or the weather.',
 }
 
