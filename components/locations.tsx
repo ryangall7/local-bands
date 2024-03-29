@@ -58,7 +58,7 @@ export default function Locations() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10 md:mb-10 bg-gray-100 rounded shadow-xl">
             <h2 className="h2 mb-4">How do I get my Local Band?</h2>
-            <div className="flex gap-8 m-4 items-center">
+            <div className="md-flex gap-8 m-4 items-center">
               <Image src={POSImage} className="w-56 m-4 rounded border-gray-200" alt="Local Bands" />
               <div className="text-left">
                 <p className="text-xl text-gray-600">Local Bands are available at the following retailers for $2 each. The Local Band works on the honor system.  Request the band that corresponds with your Wood River Valley origin story. The authorized seller may ask you a validation quiz question. If you see fruad let us know.</p>
@@ -68,7 +68,7 @@ export default function Locations() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mt-6">
 
             {locations.map((location, i) => (
               <LocationBlock key={i} title={location.name} description={location.address} logo={location.logo} link={location.link} />

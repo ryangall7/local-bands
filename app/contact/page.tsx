@@ -12,7 +12,7 @@ export default function SignIn() {
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
-      <Image src={BandsTexture} className="fixed top-0 left-0 w-full h-[100vh] object-fit" alt="bands Texture"/>
+      <Image src={BandsTexture} className="fixed top-0 left-0 w-full h-[100vh] object-cover" alt="bands Texture"/>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="mt-32 mb-12 md:mt-40 md:pb-20 shadow-lg py-6 px-8 border-gray-200 rounded bg-white max-w-3xl mx-auto">
 
