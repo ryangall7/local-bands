@@ -1,7 +1,7 @@
 import './css/style.css'
 
 import { Inter } from 'next/font/google'
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 
@@ -27,6 +27,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
         </div>
+        <GoogleAnalytics gaId="G-VEMTK9DKQQ" />
       </body>
     </html>
   )
